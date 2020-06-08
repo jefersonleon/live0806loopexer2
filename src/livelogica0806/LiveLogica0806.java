@@ -16,13 +16,14 @@ public class LiveLogica0806 {
     public static void main(String[] args) {
         int numero, acSomaNumeros;
         acSomaNumeros = 0;
+        numero = -1;
         Scanner ler = new Scanner(System.in);
-        do{
+        while(numero != 0){
             System.out.println("Informe qualquer numero ou zero para sair:");
             numero = ler.nextInt();
             acSomaNumeros = acSomaNumeros + numero;
             
-        }while(numero != 0);
+        }
         System.out.println("A soma dos valores informados:"+acSomaNumeros);
     }
 
